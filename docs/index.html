@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Портал в космос</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-color: white;
+            --secondary-color: gray;
+        }
+
+        body {
+            background: var(--primary-color);
+            
+        }
+    </style>    
+</head>
+
+<body>
+    <div class="form" action="index.html" method="post">
+
+    <h1>Вход</h1>
+
+    <div class="input-form">
+        <input type="text" id="username" placeholder="Логин">
+    </div>
+
+    <div class="input-form">
+        <input type="password" id="password" placeholder="Пароль">
+    </div>
+
+    <div class="input-form">
+        <input type="submit" onclick="login()" value="Войти">
+    </div>
+
+    <div class="clear">
+        <input type="submit" onclick="clearFields()" value="Очистить">
+    </div>
+
+    <div class="theme">
+        <input type="submit" onclick="changeTheme('dark')" value="Тёмная тема">
+        <input type="submit" onclick="changeTheme('light')" value="Светлая тема">
+    </div>
+</body>
+<script>
+    function login()
+    {
+        elem = document.getElementById('username');
+        username = elem.value;
+        elem.style.background = 'red';
+        elem = document.getElementById('password');
+        password = elem.value;
+        elem.style.background = 'red';
+        if (username == 'admin' && password == '12345'){ 
+        window.open("adminpanel.html");
+        } else if (username == 'user' && password == '00000') {
+        window.open("mercury.html");
+        } else {
+        alert("Неверный логин или пароль!")
+    }
+    }
+    function clearFields(){
+        document.getElementById('username').value="";
+        document.getElementById('password').value="";
+    }
+
+    document.getElementById("text").style.color = "var(--font-color)";
+
+    function changeTheme(themeName) {
+        var primaryColor;
+        var secondaryColor;
+        
+        if (themeName == 'light') {
+            primaryColor == "white";
+            secondaryColor == "gray";
+        }
+
+        if (themeName == 'dark') {
+            primaryColor = "#303030";
+            secondaryColor = "#eee";
+        }
+
+        document.documentElement.style.setProperty("--primary-color", primaryColor);
+        document.documentElement.style.setProperty("--secondary-color", secondaryColor);
+    };
+</script>
+
+</html>

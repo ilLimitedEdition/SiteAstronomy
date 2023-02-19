@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: url(https://pibig.info/uploads/posts/2022-08/1659372135_2-pibig-info-p-chernii-fon-kosmos-krasivo-2.jpg);
+    background-size: 100%;
+    color: aliceblue;
+    height: 100%;
+    margin: 0;
+    padding: 0;    
+}
+
+.wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 1250px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: url(https://pibig.info/uploads/posts/2022-08/1659372135_2-pibig-info-p-chernii-fon-kosmos-krasivo-2.jpg);
+    font: 20px/26px Arial, sans-serif;
+
+}
+
+.content {
+    flex: 1 0 auto;
+}
+    
+h1 {
+    
+    padding: 40px 20px 30px;
+    font: 26px/1.3 Arial, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+a {
+    color: #3498DB;
+ 
+     display: inline-block; /* Строчно-блочный элемент */
+     background: #8C959D; /* Серый цвет фона */
+     color: #fff; /* Белый цвет текста */
+     padding: 1rem 1.5rem; /* Поля вокруг текста */
+     text-decoration: none; /* Убираем подчёркивание */
+     border-radius: 3px; /* Скругляем уголки */
+    
+   
+}
+
+header {
+    color: #FFA500;
+    margin:0;
+    background: url(https://pibig.info/uploads/posts/2022-08/1659372135_2-pibig-info-p-chernii-fon-kosmos-krasivo-2.jpg);
+}
+
+footer {
+    flex: 0 0 auto;
+    height: 80px;
+    background: url(https://pibig.info/uploads/posts/2022-08/1659372135_2-pibig-info-p-chernii-fon-kosmos-krasivo-2.jpg);
+}
